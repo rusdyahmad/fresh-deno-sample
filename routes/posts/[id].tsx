@@ -1,13 +1,12 @@
 /** @jsx h */
 import {h} from "preact";
 import {tw} from "@twind";
-import {PageProps} from "$fresh/server.ts";
+import {PageProps, Handlers} from "$fresh/server.ts";
 import Header from "../../islands/Header.tsx";
 import Footer from "../../islands/Footer.tsx";
 
-export const handler : Handlers < Post | null > = {
+export const handler: Handlers = {
     async GET(_req, ctx) {
-
         const id = ctx.params.id
         const getPost = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
         const post = await getPost.json()
