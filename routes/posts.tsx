@@ -2,10 +2,12 @@
 import {h} from "preact";
 import {tw} from "@twind";
 import {PageProps} from "$fresh/server.ts";
+import {Handlers} from "$fresh/server.ts";
 import Header from "../islands/Header.tsx";
 import Footer from "../islands/Footer.tsx";
 
-export const handler : Handlers < Post | null > = {
+
+export const handler : Handlers < Posts | null > = {
     async GET(_req, ctx) {
 
         const getPosts = await fetch("https://jsonplaceholder.typicode.com/posts")
@@ -14,7 +16,7 @@ export const handler : Handlers < Post | null > = {
     }
 }
 
-export default function Posts(props) {
+export default function Posts(props : PageProps) {
     return (
         <div class={tw`flex flex-col h-screen`}>
             <Header/>
