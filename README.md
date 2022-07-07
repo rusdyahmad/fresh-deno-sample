@@ -1,5 +1,7 @@
 # fresh project
 
+![alt text](https://i.ibb.co/Lp6gBL3/sample.png "Example")
+
 ### Usage
 
 Start the project:
