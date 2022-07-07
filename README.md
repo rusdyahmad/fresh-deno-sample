@@ -1,6 +1,6 @@
 # fresh project
 
-![alt text](https://i.ibb.co/Lp6gBL3/sample.png "Example")
+![alt text](https://rusdy.com/wp-content/uploads/2022/07/sample.png "Example")
 
 ### Usage
 
